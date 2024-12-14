@@ -46,7 +46,7 @@ const NavBar = () => {
                             </Link>
                         </li>
                     ))}
-                    <li>
+                    <li key={navLinks.length-1}>
                         <a href='#contact' className='group'>
                             <h1 className='text-lg font-bold text-white/70 cursor-pointer'>Contact me</h1>
                             <div className='relative'>

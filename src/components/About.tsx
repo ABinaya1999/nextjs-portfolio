@@ -19,8 +19,8 @@ const About = () => {
             About <span className='text-orange-400'>Me</span>
         </h1>
         <div className='grid grid-cols-8 gap-6 place-items-center'>
-            {about.map((link,index)=>(
-            <div className={`w-full col-span-${link.col} relative bg-white/10 backdrop-blur-bg-lg border border-white/20 rounded-xl overflow-hidden`}>
+            {about.map((link)=>(
+            <div className={`w-full col-span-4 relative bg-white/10 backdrop-blur-bg-lg border border-white/20 rounded-xl overflow-hidden`}>
                 <div className='absolute inset-0 bg-gradient-to-r from-orange-400 via-purple-700 to-orange-800 opacity-30 animate-gradient-xy'>
 
                 </div>
