@@ -1,9 +1,12 @@
+"use client"
 import React from 'react';
 import { motion } from 'framer-motion'
 import Image from 'next/image';
 import cursor from '@/assets/icon1.png'; 
-import lightning from '@/assets/icon2.jpg'
+import lightning from '../assets/icon2.png'
 import profilepic from '@/assets/profilepic.png'
+
+
 const Hero = () => {
 
     return (
@@ -18,29 +21,33 @@ const Hero = () => {
                     <h1 className="text-[#E48A57]">Binay Raj Parajuli</h1>
                 </div>
 
-                {/* <motion.div
+                <motion.div
                     className="absolute left-[280px] top-[170px]"
                     drag
                 >
                     <Image
                         src={cursor}
                         alt="Cursor Icon"
-                        width={50} // Adjust dimensions as necessary
-                        height={50}
+                        width={170}
+                        height={170}
+                        className=''
+                        draggable="false"
                     />
                 </motion.div>
 
                 <motion.div
-                    className="absolute left-[280px] top-[170px]"
+                    className="absolute left-[220px] top-[20px]"
                     drag
                 >
                     <Image
                         src={lightning}
                         alt="Cursor Icon"
-                        width={50} // Adjust dimensions as necessary
-                        height={50}
+                        width={120} // Adjust dimensions as necessary
+                        height={120}
+                        draggable="false"
+                        className=''
                     />
-                </motion.div> */}
+                </motion.div>
         
                 <p className='text-center text-xl max-w-[500px] mx-auto mt-8 text-white/80'>
                     I am a Software Engineer leveraging my knowledge in Python(Django) and JavaScript(React).
