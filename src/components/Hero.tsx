@@ -22,7 +22,7 @@ const Hero = () => {
                 </div>
 
                 <motion.div
-                    className="absolute left-[280px] top-[170px]"
+                    className="hidden md:block absolute left-[280px] top-[170px]"
                     drag
                 >
                     <Image
@@ -36,13 +36,13 @@ const Hero = () => {
                 </motion.div>
 
                 <motion.div
-                    className="absolute left-[220px] top-[20px]"
+                    className="hidden md:block absolute left-[220px] top-[20px]"
                     drag
                 >
                     <Image
                         src={lightning}
                         alt="Cursor Icon"
-                        width={120} // Adjust dimensions as necessary
+                        width={120} 
                         height={120}
                         draggable="false"
                         className=''
@@ -50,7 +50,7 @@ const Hero = () => {
                 </motion.div>
         
                 <p className='text-center text-xl max-w-[500px] mx-auto mt-8 text-white/80'>
-                    I am a Software Engineer leveraging my knowledge in Python(Django) and JavaScript(React).
+                    I am a Software Engineer leveraging my knowledge in web development.
                 </p>
                 <Image
                     src={profilepic}

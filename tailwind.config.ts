@@ -10,6 +10,7 @@ export default {
     extend: {
       backgroundImage: {
         'custom-gradient': 'linear-gradient(to bottom, #000, #2B1942 35%, #8F5C55 60%, #DBAF6E 80%)',
+        'skill_custom-gradient': 'linear-gradient(to top, #000, #381a5f 80%)',
       },
       colors: {
         background: "var(--background)",
