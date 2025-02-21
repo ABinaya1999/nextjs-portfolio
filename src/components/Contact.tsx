@@ -7,7 +7,7 @@ import mail from "../assets/mail.png"
 const Contact = () => {
   return (
     <div className='max-w-[1000px] mx-auto flex flex-col lg:flex-row text-white/70 p-8 rounded-lg
-    space-y-8 lg:space-y-0 lg:space-x-8' id="contact">
+    space-y-8 lg:space-y-0 lg:space-x-8 items-center' id="contact">
       <div className='flex justify-center items-center'>
         <ul className='space-y-4'>
           <li className='flex items-center'>

@@ -23,15 +23,15 @@ const NavBar = () => {
         open:{
             x:0,
             transition:{
-                stiffness:20,
-                damping:15,
+                stiffness:50,
+                damping:5,
             }
         },
         closed:{
             x:'-100%',
             transition:{
-                stiffness:20,
-                damping:15,
+                stiffness:300,
+                damping:20,
             }
         }
     }
@@ -63,10 +63,10 @@ const NavBar = () => {
             </div>
 
             <motion.div
-                initial={false}
+                initial='closed'
                 animate={nav ? 'open' : 'closed'}
                 variants={menuVariants}
-                className="fixed left-0 top-0 w-full z-40 bg-black/90"
+                className="md:hidden fixed left-0 top-0 w-full z-40 bg-black/90"
             >
                 <ul className='text-4xl font-semibold my-24 text-center space-y-8'>
                     {navLinks.map((link, index)=>(
